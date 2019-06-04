@@ -25,7 +25,9 @@
 	font-weight:normal;
 	font-style:normal;
 }
-
+* {
+    transition: all .2s;
+}
 
 
 .page {
@@ -93,6 +95,7 @@
 	text-decoration: underline;
 	text-decoration-color: #edbfff;
 	text-shadow: none;
+	cursor: pointer;
 }
 
 /*END HEADER*/
@@ -129,6 +132,7 @@
 	color: #fff;
 	font-weight: 300;
 	letter-spacing: -0.1px;
+	width: 513px;
 }
 .slider__img-wrap {
 	position: absolute;
@@ -195,6 +199,7 @@
 	font:  16px/24px "Open Sans";
 	margin: 10px 10px 0 0;
 	letter-spacing: -0.3px;
+	width: 228px;
 }
 .about a {
 	font:  18px/24px "League Gothic";
@@ -220,7 +225,6 @@
 }
 .blog__left-column {
 	width: 420px;
-	height: 260px;
 	background: #fff;
 	border: 1px solid #efefef;
 }
@@ -232,14 +236,13 @@
 }
 .blog__text_wrap {
 	float: right;
-	padding: 14px 23px 0 0;
+	padding: 14px 12px 0 0;
 }
 .blog__h4 {
 	font:  30px/24px "League Gothic";
 	margin: 2px 0 0 0;
 	font-weight: 100;
 	letter-spacing: -0.3px;
-	
 }
 .blog__h4_span {
 	color: #edbfff;
@@ -250,6 +253,7 @@
 	margin: 10px 0 0 0;
 	font-weight: 100;
 	letter-spacing: -0.3px;
+	width: 346px;
 }
 .blog__right-column {
 	width: 445px;
@@ -311,6 +315,9 @@
 	margin: 0;
 	padding: 0;
 }
+.hover-for_1920 {
+	display: none;
+}
 
 /*LOGOS*/
 .logos__wrap {
@@ -318,11 +325,42 @@
 }
 .logos {
 	padding: 25px 0 30px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	max-width: 779px;
 }
-.logos__img {
-	margin: 0 auto;
-	display: block;
+.logos__log1 {
+	background: url('../img/logos.png') no-repeat 0 0;
+	width: 69px;
+	height: 64px;
 }
+.logos__log2 {
+	background: url('../img/logos.png') no-repeat -134px 0;
+	width: 72px;
+	height: 64px;
+}
+.logos__log3 {
+	background: url('../img/logos.png') no-repeat -270px 0;
+	width: 65px;
+	height: 65px;
+}
+.logos__log4 {
+	background: url('../img/logos.png') no-repeat -410px -1px;
+	width: 50px;
+	height: 63px;
+}
+.logos__log5 {
+	background: url('../img/logos.png') no-repeat -528px -22px;
+	width: 103px;
+	height: 21px;
+}
+.logos__log6 {
+	background: url('../img/logos.png') no-repeat -697px -2px;
+	width: 78px;
+	height: 61px;
+} 
 
 /*COMMENT*/
 .comment__wrap {
@@ -337,6 +375,9 @@
 .comment__box {
 	width: 285px;
 	height: 200px;
+}
+.comment__box_hover-for-1920 {
+	display: none;
 }
 .comment__h2 {
 	font:  48px/33.7px "League Gothic";
@@ -364,6 +405,7 @@
 	letter-spacing: -0.1px;
 	margin: 0;
 	color: #787878;
+	width: 283px;
 }
 .comment__h5 {
 	font:  30px/24px "League Gothic";
@@ -381,7 +423,7 @@
 	justify-content: space-between;
 	color: #fff;
 	padding: 41px 0 40px 0;
-	text-shadow: 0px 2px 1px rgba(140, 131, 132);
+	text-shadow: 0px 2px 1px rgba(93, 92, 100);
 }
 .footer__list {
 	display: flex;
@@ -411,7 +453,9 @@
 	font:  12px/33.7px "Open Sans";
 	font-weight: 100;
 	margin-top: 2px;
+	text-shadow: 1px 3px 1px rgb(81, 81, 91);
 }
 .footer__span {
 	font-weight: 800;
 }
+/*END FOOTER*/
