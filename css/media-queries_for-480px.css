@@ -1,0 +1,236 @@
+@media only screen and (max-width: 480px) {
+	.hide-from-1920-show-for-480 {
+		display: block;
+		
+	}
+	.hide-from-480 {
+		display: none;
+	}
+	.bg {
+		height: 548px
+	}
+	.header__logo {
+		margin: 0 auto;
+		width: 175px;
+	}
+	.header {
+		height: 129px;
+	}
+	.header__nav-for-480 {
+		position: absolute;
+		top: 131px;
+		left: 109px;
+		font: normal 24px/33.7px "League Gothic";
+		color: #fff;
+		text-transform: uppercase;
+		text-shadow: none;
+	}
+	.header__input {
+		display: none;
+	}
+	.header__label {
+		width: 245px;
+	    height: 40px;
+	    display: block;
+	    text-align: center;
+	    cursor: pointer;
+	    padding-top: 10px;
+	    text-decoration: underline;
+		text-decoration-color: #edbfff;
+	}
+	.header__input:checked ~ .header__list-for-480 {
+		display: block;	
+	}
+	.header__input:checked ~ .header__label {
+		background: rgb(54, 41, 62, 0.9);
+		-moz-border-radius-topleft: 8px;
+		-webkit-border-top-left-radius: 8px;
+		 border-top-left-radius: 8px;
+		-moz-border-radius-topright: 8px;
+		-webkit-border-top-right-radius: 8px;
+		border-top-right-radius: 8px;
+
+	}
+	.header__list-for-480 {
+		display: none;
+		margin: -3px 0 0 0;
+		padding: 0; 
+		list-style: none;
+		text-align: center;
+		border-left: 1px solid #1b252a;
+		border-bottom: 1px solid #1b252a;
+		border-right: 1px solid #1b252a;
+
+		-moz-border-radius-bottomright: 8px;
+		-webkit-border-bottom-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+		-moz-border-radius-bottomleft: 8px;
+		-webkit-border-bottom-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+	}
+	.header__list__item-for-480 {
+		margin: 0;
+		padding: 3.5px 60px;
+		background: rgb(54, 41, 62, 0.9);
+		border-top: 1px solid #513e58;
+		border-bottom: 1px solid #35273d;
+	}
+	.header__list__item-for-480 a {
+		color: #fff;
+		text-decoration: none;
+	}
+	.header__list__item-for-480:hover {
+		background: rgb(42, 34, 49, 0.9);
+		cursor: pointer;
+		border-bottom: 1px solid #edbfff;
+		padding: 3.5px 60px;
+	}
+	.no-border {
+		border: none; 
+		-moz-border-radius-bottomright: 8px;
+		-webkit-border-bottom-right-radius: 8px;
+		border-bottom-right-radius: 8px;
+		-moz-border-radius-bottomleft: 8px;
+		-webkit-border-bottom-left-radius: 8px;
+		border-bottom-left-radius: 8px;
+	}
+/*HEADER*/
+/*SLIEDER*/
+	.slider_opacity {
+		height: 246px;
+	}
+	.slider__img-wrap {
+		top: -11px;
+		left: 54.3%;
+		background: url(../img/Iphone69.png) no-repeat -978px -56px;
+		width: 188px;
+		height: 290px;
+	}
+	.slider__text-wrap {
+		padding: 0 0 0 31px;
+	}
+	.slider__h2 {
+		font-size: 36px;
+		line-height: 24px;
+		margin: 100px 0 0 0;
+	}
+	.slider__h3 {
+		font-size: 18px;
+		line-height: 24px;
+		margin: 6px 0 0 0;
+	}
+/*SLIEDER*/
+/*ABOUT*/
+	.about__wrap {
+		height: 597px;
+		border-bottom: 1px solid #12191f;
+	}
+	.about {
+		display: block;
+		padding: 78px 0 0 21px;
+	}
+	.about__box {
+		width: 427px;
+		height: 134px;
+		margin: 0 0 22px 0;
+	}
+	.about__text {
+		width: 374px;
+		height: 72px;
+	}
+	.about__text_wrap {
+		margin: 0;
+	}
+	.about a {
+		margin: 13px 5px 0 0;
+	}
+/*ABOUT*/
+/*BLOG*/
+	.blog__wrap {
+		height: 785px;
+	}
+	.blog {
+		display: block;
+		padding: 86px 0 87px 10px;
+	}
+	.blog__left-column {
+		width: 100%;
+		padding: 0;
+		height: 250px;
+	}
+	.blog__text_wrap {
+		float: none;
+		padding: 13px 0 0 63px;
+	}
+	.blog__h4 {
+		font-size: 30px;
+		line-height: 24px;
+		letter-spacing: -0.2px;
+	}
+	.blog__h4_span {
+		margin: 0 0 0 5px;
+		display: inline;
+	}
+	.blog__text {
+		width: 355px;
+		height: 167px;
+		margin: 16px 0 0 0;
+	}
+	.blog__right-column {
+		padding: 95px 6px 0 68px;
+	}
+	.blog a {
+		margin: -2px 2px 0 0;
+	}
+/*BLOG*/
+/*LOGOS*/
+	.logos__wrap {
+		height: 232px;
+	}
+	.logos {
+		max-width: 480px;
+		height: 100%;
+		padding: 0;
+		justify-content: space-evenly;
+		flex-direction: column;
+	}
+	.logos__wrap_for-480 {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 100%;
+	}
+/*LOGOS*/	
+/*COMMENT*/
+	.comment__wrap {
+		height: 665.5px;
+	}
+	.comment {
+		display: block;
+		padding: 76px 7px 95px 10px;
+	}
+	.comment__box {
+		height: 183px;
+	}
+	.comment__text {
+		width: 440px;
+		height: 90px;
+	}
+/*COMMENT*/
+/*FOOTER*/
+	.footer {
+		padding: 41px 0 40px 0px;
+	}
+	.footer__list {
+		display: flex;
+		justify-content: space-around;
+	}
+	.footer__list__item {
+		margin: 0;
+	}
+	.footer__text {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+}

@@ -5,7 +5,8 @@
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1.0" >
 	<title>html_7-8</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media-queries.css" media="all and (max-width: 768px)">
+	<link rel="stylesheet" href="css/media-queries_for-768px.css" media="all and (max-width: 768px)">
+	<link rel="stylesheet" href="css/media-queries_for-480px.css" media="all and (max-width: 480px)">
 	<!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
@@ -14,7 +15,7 @@
 	<div class="bg">
 		<header class="header content-max_width_960">
 			<h1 class="header__logo">PINGBULL<span class="header__span">ER</span></h1>
-			<nav class="header__nav">
+			<nav class="header__nav hide-from-480">
 				<ul class="header__list">
 					<li class="header__list__item"><a href="#">Home</a></li>
 					<li class="header__list__item"><a href="#">About</a></li>
@@ -24,13 +25,14 @@
 					<li class="header__list__item"><a href="#">Dolor Sit Amet</a></li>
 				</ul>
 			</nav>
+			
 		</header>
 		<div class="slider_opacity">
 			<div class="slider content-max_width_960">
 				<div class="slider__text-wrap">
 					<h2 class="slider__h2">Lorem Ipsum Dolor</h2>
-					<h3 class="slider__h3">IT WILL MAKE ALL OF YOUR DREAMS COME <span class="slider__h3-span_hover-768">TRUE</span></h3>
-					<p class="slider__text">
+					<h3 class="slider__h3">IT WILL MAKE ALL OF YOUR DREAMS COME <span class="hide-from-768-show-for-1920">TRUE</span></h3>
+					<p class="slider__text hide-from-480">
 						Semper sollicitudin gravida eget, ves&shy;tibulum sit amet sapien.
 						Nunc dignis&shy;sim tincidunt est, et auctor turpis ornare a. Nam
 						venenatis hendrerit est at volutpat. Morbi elementum euismod
@@ -42,6 +44,17 @@
 				<div class="slider__img-wrap"></div>
 			</div>
 		</div>
+		<nav class="header__nav-for-480 hide-from-1920-show-for-480">
+				<input type="checkbox" name="toggle" id="menu" class="header__input">
+				<label for="menu" class="header__label">Home</label>
+				<ul class="header__list-for-480">
+					<li class="header__list__item-for-480"><a href="#">About</a></li>
+					<li class="header__list__item-for-480"><a href="#">Blog</a></li>
+					<li class="header__list__item-for-480"><a href="#">Products</a></li>
+					<li class="header__list__item-for-480"><a href="#">Lorem Ipsum</a></li>
+					<li class="header__list__item-for-480 no-border"><a href="#">Dolor Sit Amet</a></li>
+				</ul>
+			</nav>
 	</div>
 <!--END HEADER-SLIDER-->
 	
@@ -117,57 +130,64 @@
 						<p class="blog__post-p">Posted by Admin on March 13 2012 in Blog Updates</p>
 					</div>
 				</div>
-				<a href="#" class="hover-for_768">READ MORE HERE</a>
-				<a href="#" class="hover-for_1920">MORE BLOG POSTS</a>
+				<a href="#" class="hide-from-768-show-for-1920">READ MORE HERE</a>
+				<a href="#" class="hide-from-1920-show-for-768">MORE BLOG POSTS</a>
 			</div>
 		</section>
 	</div>
 	<hr class="blog__hr">
 	<div class="logos__wrap">
-		<!--<section class="logos content-max_width_960">
-			<img class="logos__img" src="img/logos.png" alt="logos">
-		</section>-->
 		<section class="logos content-max_width_960">
-			<div class="logos__log1"></div>
-			<div class="logos__log2"></div>
-			<div class="logos__log3"></div>
-			<div class="logos__log4"></div>
-			<div class="logos__log5"></div>
-			<div class="logos__log6"></div>
+				<div class="logos__log1 hide-from-480"></div>
+				<div class="logos__log2 hide-from-480"></div>
+				<div class="logos__log3 hide-from-480"></div>
+				<div class="logos__log4 hide-from-480"></div>
+				<div class="logos__log5 hide-from-480"></div>
+				<div class="logos__log6 hide-from-480"></div>
+			<div class=" logos__wrap_for-480 hide-from-1920-show-for-480">
+				<div class="logos__log1"></div>
+				<div class="logos__log2"></div>
+				<div class="logos__log3"></div>
+			</div>
+			<div class="logos__wrap_for-480 hide-from-1920-show-for-480">
+				<div class="logos__log4"></div>
+				<div class="logos__log5"></div>
+				<div class="logos__log6"></div>
+			</div>
 		</section>
 	</div>
 	<hr class="blog__hr">
 	<div class="comment__wrap">
 		<section class="comment content-max_width_960">
-			<div class="comment__box comment__box_hover-for-768">
+			<div class="comment__box hide-from-768-show-for-1920">
 				<h2 class="comment__h2">PIGBULL<span class="comment__span">ER</span></h2>
 				<h6 class="comment__h6">Copyright 2013, Pingbull AS</h6>
 				<p class="comment__text">
 					Nunc turpis neque, feugiat eget eleif&shy;end et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pul-
 				</p>
 			</div>
-			<div class="comment__box comment__box_hover-for-768">
+			<div class="comment__box hide-from-768-show-for-1920">
 				<h5 class="comment__h5">RECENT COMMENTS</h5>
 				<p class="comment__text">
 					Nunc turpis neque, feugiat eget eleif&shy;end et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pul&shy;vinar. Quisque urna risus, mattis pulvi&shy;nar bibendum in, venenatis quis 
 				</p>
 			</div>
-			<div class=" comment__box comment__box_hover-for-1920 ">
+			<div class=" comment__box hide-from-1920-show-for-768">
 				<h5 class="comment__h5">NEWS CATEGORIES</h5>
 				<p class="comment__text">
-					Nunc turpis neque, feugiat eget eleif&shy;end et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellen&shy;tesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pul&shy;vinar. Quisque urna risus, mattis pulvi&shy;nar bibendum in, venenatis quis 
+					Nunc turpis neque, feugiat eget eleif&shy;end et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellen&shy;tesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellen&shy;tesque pul&shy;vinar. Quisque urna risus, mattis pulvi&shy;nar biben&shy;dum in, venenatis quis 
 				</p>
 			</div>
-			<div class="comment__box comment__box_hover-for-1920">
+			<div class="comment__box hide-from-1920-show-for-768">
 				<h5 class="comment__h5">NEWS CATEGORIES</h5>
 				<p class="comment__text">
-					Nunc turpis neque, feugiat eget eleif&shy;end et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellen&shy;tesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pul&shy;vinar. Quisque urna risus, mattis pulvi&shy;nar bibendum in, venenatis quis 
+					Nunc turpis neque, feugiat eget eleif&shy;end et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellen&shy;tesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellen&shy;tesque pul&shy;vinar. Quisque urna risus, mattis pulvi&shy;nar biben&shy;dum in, venenatis quis 
 				</p>
 			</div>
 			<div class="comment__box">
 				<h5 class="comment__h5">NEWS CATEGORIES</h5>
 				<p class="comment__text">
-					Nunc turpis neque, feugiat eget eleif&shy;end et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellen&shy;tesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pul&shy;vinar. Quisque urna risus, mattis pulvi&shy;nar bibendum in, venenatis quis 
+					Nunc turpis neque, feugiat eget eleif&shy;end et, lacinia non neque. Praesent rhoncus ultrices posuere. Pellen&shy;tesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellen&shy;tesque pul&shy;vinar. Quisque urna risus, mattis pulvi&shy;nar biben&shy;dum in, venenatis quis 
 				</p>
 			</div>
 		</section>

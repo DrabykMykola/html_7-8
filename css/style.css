@@ -28,6 +28,12 @@
 * {
     transition: all .2s;
 }
+.hide-from-1920-show-for-768 {
+	display: none;
+}
+.hide-from-1920-show-for-480{
+	display: none;
+}
 
 
 .page {
@@ -47,9 +53,7 @@
 	max-width: 960px;
 	margin: 0 auto;
 }
-
 /*HEADER*/
-
 .header {
 	padding-top: 74px;
 	font: normal 24px/33.7px "League Gothic";
@@ -97,9 +101,7 @@
 	text-shadow: none;
 	cursor: pointer;
 }
-
 /*END HEADER*/
-
 /*SLIDER*/
 .slider_opacity {
 	position: relative;
@@ -142,9 +144,7 @@
 	width: 274px;
 	height: 434px;
 }
-
 /*END SLIDER*/
-
 /*BEGIN MAIN*/
 .about {
 	display: flex;
@@ -211,7 +211,6 @@
 .about a:hover {
 	text-shadow: 1px 1px 8px rgba(166, 159, 170, 1);
 }
-
 /*BLOG*/
 .blog {
 	display: flex;
@@ -315,10 +314,6 @@
 	margin: 0;
 	padding: 0;
 }
-.hover-for_1920 {
-	display: none;
-}
-
 /*LOGOS*/
 .logos__wrap {
 	background: #f9f9f9;
@@ -361,7 +356,6 @@
 	width: 78px;
 	height: 61px;
 } 
-
 /*COMMENT*/
 .comment__wrap {
 	background: #ececec;
@@ -375,9 +369,6 @@
 .comment__box {
 	width: 285px;
 	height: 200px;
-}
-.comment__box_hover-for-1920 {
-	display: none;
 }
 .comment__h2 {
 	font:  48px/33.7px "League Gothic";
