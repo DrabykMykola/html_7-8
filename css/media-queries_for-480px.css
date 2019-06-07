@@ -1,13 +1,12 @@
 @media only screen and (max-width: 480px) {
 	.hide-from-1920-show-for-480 {
-		display: block;
-		
+		display: block;	
 	}
 	.hide-from-480 {
 		display: none;
 	}
 	.bg {
-		height: 548px
+		height: 548px;
 	}
 	.header__logo {
 		margin: 0 auto;
@@ -18,8 +17,8 @@
 	}
 	.header__nav-for-480 {
 		position: absolute;
-		top: 131px;
-		left: 109px;
+		top: 17.7%;
+		left: 23.5%;
 		font: normal 24px/33.7px "League Gothic";
 		color: #fff;
 		text-transform: uppercase;
@@ -102,7 +101,7 @@
 	.slider__img-wrap {
 		top: -11px;
 		left: 54.3%;
-		background: url(../img/Iphone69.png) no-repeat -978px -56px;
+		background: url(../img/Iphone480.png) no-repeat -978px -56px;
 		width: 188px;
 		height: 290px;
 	}
@@ -188,11 +187,10 @@
 		height: 232px;
 	}
 	.logos {
-		max-width: 480px;
-		height: 100%;
 		padding: 0;
-		justify-content: space-evenly;
 		flex-direction: column;
+		height: 100%;
+		justify-content: space-evenly;
 	}
 	.logos__wrap_for-480 {
 		display: flex;

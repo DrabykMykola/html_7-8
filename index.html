@@ -7,13 +7,14 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media-queries_for-768px.css" media="all and (max-width: 768px)">
 	<link rel="stylesheet" href="css/media-queries_for-480px.css" media="all and (max-width: 480px)">
+	<link rel="stylesheet" href="css/media-queries_for-320px.css" media="all and (max-width: 320px)">
 	<!--[if lt IE 9]>
     <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<![endif]-->
 </head>
 <body class="page">
 	<div class="bg">
-		<header class="header content-max_width_960">
+		<header class="header content-max_width_960 max-width_320">
 			<h1 class="header__logo">PINGBULL<span class="header__span">ER</span></h1>
 			<nav class="header__nav hide-from-480">
 				<ul class="header__list">
@@ -25,7 +26,6 @@
 					<li class="header__list__item"><a href="#">Dolor Sit Amet</a></li>
 				</ul>
 			</nav>
-			
 		</header>
 		<div class="slider_opacity">
 			<div class="slider content-max_width_960">
@@ -41,20 +41,20 @@
 						lectus lobortis.
 					</p>
 				</div>
-				<div class="slider__img-wrap"></div>
+				<div class="slider__img-wrap hide-from-320"></div>
 			</div>
 		</div>
 		<nav class="header__nav-for-480 hide-from-1920-show-for-480">
-				<input type="checkbox" name="toggle" id="menu" class="header__input">
-				<label for="menu" class="header__label">Home</label>
-				<ul class="header__list-for-480">
-					<li class="header__list__item-for-480"><a href="#">About</a></li>
-					<li class="header__list__item-for-480"><a href="#">Blog</a></li>
-					<li class="header__list__item-for-480"><a href="#">Products</a></li>
-					<li class="header__list__item-for-480"><a href="#">Lorem Ipsum</a></li>
-					<li class="header__list__item-for-480 no-border"><a href="#">Dolor Sit Amet</a></li>
-				</ul>
-			</nav>
+			<input type="checkbox" name="toggle" id="menu" class="header__input">
+			<label for="menu" class="header__label">Home</label>
+			<ul class="header__list-for-480">
+				<li class="header__list__item-for-480"><a href="#">About</a></li>
+				<li class="header__list__item-for-480"><a href="#">Blog</a></li>
+				<li class="header__list__item-for-480"><a href="#">Products</a></li>
+				<li class="header__list__item-for-480"><a href="#">Lorem Ipsum</a></li>
+				<li class="header__list__item-for-480 no-border"><a href="#">Dolor Sit Amet</a></li>
+			</ul>
+		</nav>
 	</div>
 <!--END HEADER-SLIDER-->
 	
@@ -65,33 +65,33 @@
 			<div class="about__box about__box_margin">
 				<div class="about__icon about__icon_1"></div>
 				<div class="about__text_wrap">
-				<h4 class="about__h4">ABOUT OUR COMPANY</h4>
-				<p class="about__text">
-					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po&shy;suere. Pel&shy;lentesque vel lacus eget nisi convallis auctor. Nam
-				</p>
-				<a href="#">READ MORE</a>
+					<h4 class="about__h4">ABOUT OUR COMPANY</h4>
+					<p class="about__text">
+						Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po&shy;suere. Pel&shy;lentesque vel lacus eget nisi convallis auctor. Nam
+					</p>
+					<a href="#">READ MORE</a>
 				</div>
 			</div>
 
 			<div class="about__box">
 				<div class="about__icon about__icon_2"></div>
 				<div class="about__text_wrap">
-				<h4 class="about__h4">ABOUT OUR COMPANY</h4>
-				<p class="about__text">
-					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po&shy;suere. Pel&shy;lentesque vel lacus eget nisi convallis auctor. Nam
-				</p>
-				<a href="#">READ MORE</a>
+					<h4 class="about__h4">ABOUT OUR COMPANY</h4>
+					<p class="about__text">
+						Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po&shy;suere. Pel&shy;lentesque vel lacus eget nisi convallis auctor. Nam
+					</p>
+					<a href="#">READ MORE</a>
 				</div>
 			</div>
 
 			<div class="about__box">
 				<div class="about__icon about__icon_3"></div>
 				<div class="about__text_wrap about__text_wrap-for768">
-				<h4 class="about__h4">ABOUT OUR COMPANY</h4>
-				<p class="about__text">
-					Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po&shy;suere. Pel&shy;lentesque vel lacus eget nisi convallis auctor. Nam
-				</p>
-				<a href="#">READ MORE</a>
+					<h4 class="about__h4">ABOUT OUR COMPANY</h4>
+					<p class="about__text">
+						Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po&shy;suere. Pel&shy;lentesque vel lacus eget nisi convallis auctor. Nam
+					</p>
+					<a href="#">READ MORE</a>
 				</div>
 			</div>
 		</section>
@@ -103,7 +103,7 @@
 				<div class="blog__text_wrap">
 					<h4 class="blog__h4">PINGBULLER<span class="blog__h4_span">STARTS HERE</span></h4>
 					<p class="blog__text">
-						“Nunc turpis neque, feugiat eget eleifend et, lacinia non neque. Praesent rhoncus ultrices po&shy;suere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”
+						“Nunc turpis neque, feu&shy;giat eget eleifend et, lacinia non neque. Prae&shy;sent rhoncus ultrices po<span class="hide-from-320">&shy;</span>suere. Pellentesque vel lacus eget nisi conval&shy;lis auctor. Nam vitae lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”
 					</p>
 				</div>
 			</div>
@@ -112,22 +112,22 @@
 				<div class="blog__post">
 					<div class="blog__post-icon blog__post-icon1"></div>
 					<div class="blog__post-text">
-						<span class="blog__post-span">Nunc turpis neque feugiat eget</span>
-						<p class="blog__post-p">Posted by Admin on March 13 2012 in Recent News</p>
+						<span class="blog__post-span">Nunc turpis neque <span class="hide-from-320">feugiat eget</span></span>
+						<p class="blog__post-p">Posted by Admin on March 13 <span class="hide-from-320">2012 in Recent News</span></p>
 					</div>
 				</div>
 				<div class="blog__post">
 					<div class="blog__post-icon blog__post-icon2"></div>
 					<div class="blog__post-text">
-						<span class="blog__post-span">Nunc turpis neque feugiat eget</span>
-						<p class="blog__post-p">Posted by Admin on March 13 2012 in Category</p>
+						<span class="blog__post-span">Nunc turpis neque <span class="hide-from-320">feugiat eget</span></span>
+						<p class="blog__post-p">Posted by Admin on March 13 <span class="hide-from-320">2012 in Recent News</span></p>
 					</div>
 				</div>
 				<div class="blog__post">
 					<div class="blog__post-icon blog__post-icon3"></div>
 					<div class="blog__post-text">
-						<span class="blog__post-span">Nunc turpis neque feugiat eget</span>
-						<p class="blog__post-p">Posted by Admin on March 13 2012 in Blog Updates</p>
+						<span class="blog__post-span">Nunc turpis neque <span class="hide-from-320">feugiat eget</span></span>
+						<p class="blog__post-p">Posted by Admin on March 13 <span class="hide-from-320">2012 in Recent News</span></p>
 					</div>
 				</div>
 				<a href="#" class="hide-from-768-show-for-1920">READ MORE HERE</a>
@@ -138,26 +138,36 @@
 	<hr class="blog__hr">
 	<div class="logos__wrap">
 		<section class="logos content-max_width_960">
-				<div class="logos__log1 hide-from-480"></div>
-				<div class="logos__log2 hide-from-480"></div>
-				<div class="logos__log3 hide-from-480"></div>
-				<div class="logos__log4 hide-from-480"></div>
-				<div class="logos__log5 hide-from-480"></div>
-				<div class="logos__log6 hide-from-480"></div>
-			<div class=" logos__wrap_for-480 hide-from-1920-show-for-480">
+				<div class="logos__log1 hide-from-480 hide-from-320"></div>
+				<div class="logos__log2 hide-from-480 hide-from-320"></div>
+				<div class="logos__log3 hide-from-480 hide-from-320"></div>
+				<div class="logos__log4 hide-from-480 hide-from-320"></div>
+				<div class="logos__log5 hide-from-480 hide-from-320"></div>
+				<div class="logos__log6 hide-from-480 hide-from-320"></div>
+			<div class="logos__wrap_for-480 hide-from-1920-show-for-480 hide-from-320">
 				<div class="logos__log1"></div>
 				<div class="logos__log2"></div>
 				<div class="logos__log3"></div>
 			</div>
-			<div class="logos__wrap_for-480 hide-from-1920-show-for-480">
+			<div class="logos__wrap_for-480 hide-from-1920-show-for-480 hide-from-320">
 				<div class="logos__log4"></div>
 				<div class="logos__log5"></div>
+				<div class="logos__log6"></div>
+			</div>
+			<div class="logos__wrap_for-320 hide-from-1920-show-for-320">
+				<div class="logos__log1"></div>
+				<div class="logos__log3"></div>
+				<div class="logos__log5"></div>
+			</div>
+			<div class="logos__wrap_for-320 hide-from-1920-show-for-320">
+				<div class="logos__log2"></div>
+				<div class="logos__log4"></div>
 				<div class="logos__log6"></div>
 			</div>
 		</section>
 	</div>
 	<hr class="blog__hr">
-	<div class="comment__wrap">
+	<div class="comment__wrap hide-from-320">
 		<section class="comment content-max_width_960">
 			<div class="comment__box hide-from-768-show-for-1920">
 				<h2 class="comment__h2">PIGBULL<span class="comment__span">ER</span></h2>
@@ -196,7 +206,7 @@
 <!--BEGIN FOOTER-->
 	<div class="footer__wrap">
 		<footer class="footer content-max_width_960">
-				<nav class="footer__nav">
+				<nav class="footer__nav hide-from-320">
 					<ul class="footer__list">
 						<li class="footer__list__item"><a href="#">Home</a></li>
 						<li class="footer__list__item"><a href="#">About</a></li>

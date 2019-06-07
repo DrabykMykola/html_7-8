@@ -31,7 +31,10 @@
 .hide-from-1920-show-for-768 {
 	display: none;
 }
-.hide-from-1920-show-for-480{
+.hide-from-1920-show-for-480 {
+	display: none;
+}
+.hide-from-1920-show-for-320 {
 	display: none;
 }
 
